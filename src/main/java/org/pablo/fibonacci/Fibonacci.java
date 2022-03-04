@@ -3,7 +3,10 @@ package org.pablo.fibonacci;
 public class Fibonacci {
     public int compute(int value){
         int result;
-        if (value == 0){
+
+        if (value < 0){
+            throw new RuntimeException("El valor es negativo: " + value);
+        }else if (value == 0){
             result = 0;
         }else if (value == 1){
             result = 1;
