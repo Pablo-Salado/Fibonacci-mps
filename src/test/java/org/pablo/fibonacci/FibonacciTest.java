@@ -13,7 +13,7 @@ public class FibonacciTest {
      *  fibonacci 1 -> 1
      *  fibonacci 2 -> 1
      *  fibonacci 3 -> 2
-     *  fibonacci 6 -> 21
+     *  fibonacci 8 -> 21
      *  fibonacci negative number -> exception
      */
     @Test
@@ -53,10 +53,10 @@ public class FibonacciTest {
     }
 
     @Test
-    public void shouldComputeReturn21IfTheNumberIs6() {
+    public void shouldComputeReturn21IfTheNumberIs8() {
         Fibonacci fibonacci = new Fibonacci();
         int expectedValue = 21;
-        int obtainedValue = fibonacci.compute(6);
+        int obtainedValue = fibonacci.compute(8);
 
         assertEquals(expectedValue, obtainedValue);
     }
